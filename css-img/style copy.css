@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    --primaria: #88A0ED; /* Primária */
+    --secundaria: #6459E6; /* Secundária */
+    --terciaria: #2f296b; /* Terciária */
+    --cinza: rgba(63, 63, 63, 0.932); /* Neutro */
+    --cinza-escuro: rgb(44, 44, 44); /* Neutro com destaque */
+    --destaque: #FBC638; /* Destaque */
+}
+
+.barraCinza {
+    background-color: var(--primaria);
+    height: 75px; /* Altura da barra */
+    width: 100%; /* Largura total */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#logo {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#barraDePesquisa {
+    border-radius: 25px;
+    border: 0px;
+    height: 25px; /* Altura da barra */
+    width: 500px; /* Largura total */
+    padding-left: 12px;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+::placeholder {
+    color: black;
+}
+
+#barraDePesquisa:hover {
+    scale: 1.05;
+    background-color: rgb(255, 255, 255);
+}
+
+#barraDePesquisa:active {
+    transform: scale(0.9);
+    background-color: var(--destaque);
+}
+
+.opcoesDaBarra {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    position: absolute;
+    right: 15px;
+}
+
+
+
+
+
+/* BOTÃO DO TEMA */
+#botaoTema {
+    margin-left: 20px;
+}
+
+#checkbox {
+    -webkit-nimation: none;
+    visibility: hidden;
+    display: none;
+}
+
+.check {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+
+#checkbox:checked ~.check {
+    background-color: white;
+}
+
+.check::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#checkbox:checked ~ .check::before {
+    transform: translateX(-50px);
+}
+
+.check::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+
+#checkbox:checked ~ .check::after {
+    transform: translateX(0px);
+    background-color: var(--destaque);
+}
+/* FIM BOTÃO DO TEMA */
+
+
+
+
+
+.barraPreta {
+    background-color: var(--secundaria);
+    height: 50px; /* Altura da barra */
+    width: 100%; /* Largura total */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 18px;
+    margin-bottom: 100px;
+}
+
+#opcoesDaBarraPreta {
+    font-weight: bold;
+    animation: fadeInRight 8s forwards;
+    text-shadow: 
+    0 0 5px white, 
+      0 0 10px white,
+        0 0 15px white,
+          0 0 20px white;
+    margin-left: 25px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    padding: 6px 10px;
+    transition: 1s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-85px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#opcoesDaBarraPreta:hover {
+    color: var(--destaque);
+    border-radius: 17px;
+    text-shadow: 
+    0 0 5px var(--destaque), 
+      0 0 10px var(--destaque),
+        0 0 15px var(--destaque),
+          0 0 20px var(--destaque);
+}
+
+#opcoesDaBarraPreta:active {
+    background-color: black;
+    color: var(--destaque);
+    border-radius: 5px 0px;
+    border: 0px;
+    border-right: 4px solid var(--destaque);
+    border-bottom: 4px solid var(--destaque);
+}
+
+/*Btn Yellow*/
+.neon-yellow {
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px 10px;
+    color:var(--destaque);
+    transition: 1.25s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius:50px;
+    position: absolute; /* Define a div como um container relativo */
+    right: 0;
+}
+
+.neon-yellow:hover{
+    background: var(--destaque);
+    color: black;
+    box-shadow: 0 0 10px var(--destaque), 0 0 40px var(--destaque), 0 0 70px var(--destaque);
+}
+
+.neon-yellow:active{
+    color:var(--destaque); 
+    background: black;
+}
+
+#home {   
+    position: absolute;
+    right: 18px;
+    top: 80px;
+}
+
+#home:hover {
+    scale: 1.05;
+}
+
+#home:active {
+    transform: scale(1.3);
+}
+
+
+
+
+
+/* BOTÃO DA ASSINATURA (ÍNICIO) */
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Adicionado para permitir o posicionamento relativo dos elementos filhos */
+    z-index: 1;
+}
+  
+.cta {
+    display: flex;
+    align-items: center; /* Adicionado para centralizar verticalmente as setas */
+    padding: 1px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    height: 30px; /* Altura da barra */
+    width: 130px; /* Largura total */
+    position: relative; /* Para que as setas fiquem dentro */
+}
+  
+.cta:focus {
+    outline: none; 
+}
+  
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 var(--destaque);
+    transform: skewX(-15deg) translateY(-5px); /* Ajuste para mover a forma amarela menos para baixo */
+}
+
+.cta .span {
+    transform: skewX(15deg);
+    position: relative; /* Para que as setas fiquem dentro da forma roxa */
+    z-index: 1; /* As setas ficam acima da forma roxa */
+} 
+
+.cta .span:nth-child(2) {
+    width: 20px;
+    position: relative;
+    right: 5px; /* Diminui a margem para manter as setas dentro */
+    transform: translateY(3px); /* Ajuste para mover a seta para baixo */
+}
+
+.cta:hover .span {
+    margin-left: 5px; /* Ajuste para que as setas não saiam da forma roxa ao passar o mouse */
+}
+  
+.cta:hover  .span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+  
+.span {
+    transform: skewX(15deg) 
+}
+  
+.span:nth-child(2) {
+    width: 20px;
+    margin-left: 10px; /* Diminui a margem para manter as setas dentro */
+    position: relative;
+    top: 0; /* Ajustado para centralizar verticalmente */
+}
+    
+/**************SVG****************/
+  
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+  
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+  
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+  
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+  
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+  
+/* SVG animations */
+  
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: var(--destaque);
+    }
+    100% {
+        fill: white;
+    }
+}
+/* BOTÃO DA ASSINATURA (FIM) */
+
+
+
+
+
+/* BANNER */
+.slider {
+    margin: 0 auto;
+    width: 1120px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    width: 1120px;
+    height: 400px;
+}
+
+.slide img {
+    width: 1120px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 1120px;
+    top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--destaque);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: var(--destaque);
+    scale: 1.7;
+}
+
+.manual-btn:active {
+    transform: scale(5);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+
+.navigation-auto div {
+    border: 2px solid var(--destaque);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 1120px;
+    top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: var(--destaque);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: var(--destaque);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: var(--destaque);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: var(--destaque);
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: var(--destaque);
+}
+
+
+
+/* Estilos para a seção de desconto */
+.desconto {
+    padding: 5vh;
+    background-color: rgba(136, 160, 237, 0.1);
+    border-radius: 20px;
+}
+
+.peçasdesconto {
+    background-color: rgba(100, 89, 230, 1);
+    border-radius: 25px 25px 0 0;
+    padding: 1vh;
+}
+
+
+/* Estilos para preços */
+.preco {
+    color: #1a9986b2;
+    font-size: 18px;
+}
+
+.precoReal {
+    color: #29DFC4;
+    font-size: 30px;
+}
+
+/* Estilos para títulos na seção de desconto */
+.desconto h4 {
+    color: #FAFEFE;
+    font-size: 20px;
+}
+
+
+/* Estilos para o botão de compra */
+.btncomprar {
+    background-color: rgba(100, 89, 230, 0.5);
+    padding: 20px;
+    border-radius: 360px;
+    text-align: center;
+    border: none;
+}
+
+.btncomprar img{
+    width: 100%;
+}
+
+
+
+
+
+/* RODAPÉ */
+.contatos {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.rodape {
+    background-color: var(--primaria);
+    padding-top: 5px;
+    margin-top: 150px
+}
+
+.metodosDePagamento {
+    position: absolute;
+    right: 0px;
+    margin-top: -80px;
+}
+
+.termos {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+
+
+
+
+/* PÁGINA DO CEP */
+table {
+    margin-right: 150px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgba(100, 89, 230, 0.5);
+}
+
+th, td {
+    border: 1px solid var(--cinza-escuro);
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.regiões {
+    width: 139px;
+}
+
+th {
+    background-color: var(--secundaria);
+    color:black;
+}
+
+#tituloDaTabela {
+    width: 10px;
+}
+
+#tituloTexto {
+    text-align: center;
+}
+
+
+#frete {
+    display: flex;
+    width: 933px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+#resultado {
+    padding: 12px;
+    width: 300px;
+    height: 10px;
+    border-radius: 25px;
+    border: 0;
+    background-color: rgba(100, 89, 230, 0.5);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    display: block; /* Faz com que ele seja afetado pelo margin 0 auto */
+}
+
+.container2 {
+    padding: 20px;
+    background-color: rgba(100, 89, 230, 0.5);
+    backdrop-filter: blur(2px);
+    display: inline-block;
+    border-radius:7px;
+}
+
+input {
+    border: 0;
+    width: 220px;
+    background-color: rgba(100, 89, 230, 0.5);
+    color: black;
+    padding: 7px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.container2::placeholder {
+    color: white;
+}
+
+table h2 {
+    color: gold;
+    font-family: Big Shoulders Stencil;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0px 0px 30px 0px;
+}
+
+.tabela{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .barraCinza {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    #barraDePesquisa {
+        width: 100%;
+        margin: 10px 0; 
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .manual-navigation {
+        flex-direction: column;
+    }
+
+    .neon-yellow {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    table {
+        width: 100%; 
+        margin-right: 0; 
+    }
+}

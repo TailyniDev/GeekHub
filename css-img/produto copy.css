@@ -1,0 +1,102 @@
+/* PRODUTOS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para produtos */
+.produto {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 15px;
+    width: 90%; 
+    max-width: 300px; 
+    height: auto;
+    margin: 10px auto; 
+}
+
+.produto img {
+    width: 100%; 
+    height: auto;
+}
+
+/* Estilos para a seção de desconto */
+.desconto {
+    padding: 5vh;
+    background-color: rgba(61, 61, 61, 0.071);
+    border-radius: 20px;
+    height: auto;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#centralizacao {
+    text-align: center;
+}
+
+.peçasdesconto {
+    background-color: rgba(100, 89, 230, 1);
+    border-radius: 25px 25px 0 0;
+    padding: 3vh 0vh 1vh 3vh;
+}
+
+/* Estilos para o botão de compra */
+.btncomprar {
+    background-color: rgba(100, 89, 230, 0.5);
+    padding: 20px;
+    border-radius: 360px;
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+
+.btncomprar {
+    width: 30%;
+}
+
+/* Estilos para preços */
+.preco {
+    color: #1a9986b2;
+    font-size: 18px;
+}
+
+.precoReal {
+    color: #29DFC4;
+    font-size: 30px;
+}
+
+/* Estilos para títulos na seção de desconto */
+.desconto h4 {
+    color: #FAFEFE;
+    font-size: 20px;
+}
+
+/* Estilos para o carrossel de produtos */
+#carrosselProdutos {
+    padding: 20px;
+    width: 100%; 
+    overflow-x: auto;
+}
+
+/* Estilos para texto adaptável */
+.texto-adaptavel {
+    font-size: clamp(1rem, 5vw, 3rem); 
+    text-align: center; 
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .produto {
+        width: 90%; 
+        margin: 10px auto;
+    }
+
+    .desconto {
+        padding: 3vh; 
+    }
+
+    .btncomprar {
+        padding: 15px; 
+    }
+}

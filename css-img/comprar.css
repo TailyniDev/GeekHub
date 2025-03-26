@@ -1,0 +1,280 @@
+main{
+    margin:  0px 10%;
+}
+
+main .imagem{
+    margin:0px 100px 0px;
+}
+
+.tabela{
+    background-color: #88A0ED;
+    padding: 10%;
+    border-radius: 20px;
+}
+
+.button{
+    padding: 5%;
+    background-color: rgba(100, 89, 230, 0.5);      
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.avaliação{
+    padding: 2%;
+    background-color: rgba(100, 89, 230, 0.5);      
+    border: 0;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+.comentario{
+    background-color: #88A0ED;
+    padding: 2%;
+    border-radius: 12px;
+}
+
+hr{
+    color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+.direita{
+    margin: 100px 100px;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    flex-direction: row;
+}
+
+.textoacima{
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0; 
+}
+
+.texto{
+    font-size: 24px;
+    transform: translateY(-90px); /* Ajuste a elevação conforme necessário */
+    color: #333;
+    margin: 0;
+    text-align: left;
+    position: relative; /* Para usar z-index */
+    z-index: 1;
+}
+
+.produto{
+    background-color: rgba(230, 230, 230, 0.308);
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.butao{
+    padding: 20px;
+    background-color: #88A0ED;
+    border-radius: 16px;
+    border: 0;
+    font-size: 24px;
+}
+
+main {
+    margin: 0 5%; /* Reduz a margem lateral para 5% */
+}
+
+main .imagem {
+    margin: 0 auto; /* Centraliza a imagem */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.tabela {
+    background-color: #88A0ED;
+    padding: 5%; /* Reduz o padding para 5% */
+    border-radius: 20px;
+}
+
+.button {
+    padding: 5%;
+    background-color: rgba(100, 89, 230, 0.5);
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%; /* Botão ocupa 100% da largura do contêiner */
+}
+
+.avaliacao {
+    padding: 2%;
+    background-color: rgba(100, 89, 230, 0.5);
+    border: 0;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+.comentario {
+    background-color: #88A0ED;
+    padding: 2%;
+    border-radius: 12px;
+}
+
+hr {
+    color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.direita {
+    margin: 50px auto; /* Centraliza a seção e reduz a margem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+}
+
+.textoacima {
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0;
+    text-align: center; /* Centraliza o texto */
+}
+
+.texto {
+    font-size: 24px;
+    transform: translateY(-90px); /* Ajuste a elevação conforme necessário */
+    color: #333;
+    margin: 0;
+    text-align: left;
+    position: relative; /* Para usar z-index */
+    z-index: 1;
+}
+
+.produto {
+    background-color: rgba(230, 230, 230, 0.308);
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: 100%; /* Produto ocupa 100% da largura do contêiner */
+    max-width: 300px; /* Largura máxima para evitar que fique muito grande */
+}
+
+.butao {
+    padding: 20px;
+    background-color: #88A0ED;
+    border-radius: 16px;
+    border: 0;
+    font-size: 24px;
+    width: 100%; /* Botão ocupa 100% da largura do contêiner */
+}
+
+main {
+    margin: 0 5%; /* Reduz a margem lateral para 5% */
+}
+
+main .imagem {
+    margin: 0 auto; /* Centraliza a imagem */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.tabela {
+    background-color: #88A0ED;
+    padding: 10%;
+    border-radius: 20px;
+}
+
+.button {
+    padding: 5%;
+    background-color: rgba(100, 89, 230, 0.5);
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    width: calc(100% - 20px); /* Botão ocupa 100% da largura do contêiner, menos a margem */
+}
+
+.avaliacao {
+    padding: 2%;
+    background-color: rgba(100, 89, 230, 0.5);
+    border: 0;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+.comentario {
+    background-color: #88A0ED;
+    padding: 2%;
+    border-radius: 12px;
+}
+
+hr {
+    color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.direita {
+    margin: 50px 0; /* Remove a margem lateral */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+}
+
+.textoacima {
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0;
+    text-align: center; /* Centraliza o texto */
+}
+
+.texto {
+    font-size: 24px;
+    transform: translateY(-90px); /* Ajuste a elevação conforme necessário */
+    color: #333;
+    margin: 0;
+    text-align: left;
+    position: relative; /* Para usar z-index */
+    z-index: 1;
+}
+
+.produto {
+    background-color: rgba(230, 230, 230, 0.308);
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: calc(100% - 20px); /* Produto ocupa 100% da largura do contêiner, menos a margem */
+    max-width: 300px; /* Largura máxima para evitar que fique muito grande */
+}
+
+.butao {
+    padding: 20px;
+    background-color: #88A0ED;
+    border-radius: 16px;
+    border: 0;
+    font-size: 24px;
+    width: calc(100% - 20px); /* Botão ocupa 100% da largura do contêiner, menos a margem */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    main {
+        margin: 0 2%; /* Reduz a margem lateral em telas menores */
+    }
+
+    .direita {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        margin: 20px 0; /* Centraliza e reduz a margem */
+    }
+
+    .textoacima, .texto {
+        font-size: 20px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .produto {
+        max-width: 90%; /* Permite que o produto ocupe mais espaço em telas menores */
+    }
+
+    .button, .butao {
+        padding: 10px; /* Reduz o padding dos botões em telas menores */
+    }
+}

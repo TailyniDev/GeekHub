@@ -1,0 +1,22 @@
+
+/* PRODUTOS */
+
+/* Estilos para produtos */
+.produto {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 15px;
+    width: 50vh;
+    height: 58vh;
+}
+
+.produto img {
+    width: 50%;
+    height: auto;
+}
+
+/* Estilos para o carrossel de produtos */
+#carrosselProdutos {
+    padding: 20px;
+}
